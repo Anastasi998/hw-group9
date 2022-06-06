@@ -1,5 +1,5 @@
 body{
-background-color: #EAE7DC;
+background-color: #f9f0ee;
 }
 /* Стиль шапки с более тёмным фоном и отступами */
 .header {
@@ -61,12 +61,25 @@ background-color: #EAE7DC;
 
 .img {
     width: 100%;
-    height: 25%;
+    height: auto;
     object-fit: cover;
     justify-content: center;
     align-items: center;
 }
-
+.img1 {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    justify-content: center;
+    align-items: center;
+}
+.img2 {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    justify-content: center;
+    align-items: center;
+}
 .box-1, .box-2, .box-3, .box-4 {
     width: 33%;
     height: 65%;
@@ -158,6 +171,25 @@ width: 48%;
  'five six'
  'seven eight';
 }
+#footer-site {
+   padding-bottom: 20px;
+   padding-top: 20px;
+   background-color: #D8C3A5;
+   text-align: center;
+}
+#footer-site, #footer-site a {
+	color: #fff;
+	text-decoration: none;
+}
+.widget-social li{
+	list-style: none;
+	display: inline-block;
+	margin-right: 20px;
+}
+
+.widget-social li a:hover {
+	color: #f05f40 !important;
+}
 
 /* Медиа-запрос для адаптивности */
 
@@ -172,7 +204,7 @@ width: 48%;
    width: 50%;
   }
   .box-5, .box-6, .box-7, .box-8 {
-   height: 100%;
+   height: auto;
    width: 100%;
   }
 .container {
@@ -181,9 +213,7 @@ width: 48%;
  'one two' 
  'three four'
 }
- .img {
-  height: 45%;
-  }
+
  .box-13,.box-14,.box-15,.box-16{
  width: 100%
  }
@@ -199,16 +229,17 @@ width: 48%;
   .header-right {
     float: none;
   }
-    .content, .container-1, .container-2{
-      flex-direction: column;
-      display: block;
-      width: 100%;
-    }
+  .content, .container-1, .container-2{
+    flex-direction: column;
+    display: block;
+    width: 100%;
+ }
 
     .text, .box-1, .box-2, .box-3, .box-4  {
-    height: 100%;
+    height: auto;
     width: 100%;
     }
+
 .container {
   grid-template-columns:  1fr;
   grid-template-areas:
@@ -217,7 +248,16 @@ width: 48%;
   'three' 
   'four'}
 .img {
-  height: 50%;
+   height: 30%; 
+   width: auto;
+}
+.img1 {
+   height: 50%; 
+   width: auto;
+}
+.img2 {
+   height: 40%; 
+   width: auto;
 }
 .grid-container {
 
@@ -226,7 +266,6 @@ width: 48%;
   'six'
  'seven' 
   'eight';
-
 }
 }
 
